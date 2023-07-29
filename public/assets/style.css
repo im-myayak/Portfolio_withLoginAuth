@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 16px;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  max-height: 90vh;
+  max-width: 90%;
+  width: 25rem;
+  height: 65%;
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 43px 7px;
+  border-radius: 9px;
+  border: none;
+  padding: 2.5rem 2.5rem;
+}
+
+#header {
+  text-align: center;
+  padding: 1rem 0rem;
+}
+
+#sign_notice {
+  margin-top: 18px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(3, 3, 3);
+}
+
+.container {
+  width: 95%;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  /* display: inline-block; */
+  width: 100%;
+}
+
+.form-group label {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: rgb(16, 15, 17);
+  padding-bottom: 5px;
+}
+
+.form-group input,
+.alert {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.alert {
+  border: 1px solid red;
+  color: red;
+  margin-bottom: 5px;
+}
+
+#password_id a {
+  color: rgb(126, 120, 133);
+}
+
+#input_container {
+  position: relative;
+}
+
+.password-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 1rem 0rem;
+}
+
+#create_button {
+  background: linear-gradient(to right, #388e3c, #4caf50, #81c784);
+}
+
+#sign_alternative {
+  display: flex;
+  justify-content: space-between;
+}
+
+hr {
+  width: 33%;
+  border: 1px solid grey;
+}

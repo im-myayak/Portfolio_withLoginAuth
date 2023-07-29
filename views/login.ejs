@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="/assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="header">
+        <img src="/image/logo200Trans.png" alt="" />
+      </div>
+      <p id="sign_notice">
+        Don't have an account?<a href="/register">Sign up</a>
+      </p>
+      <section id="form_section">
+        <div class="container">
+          <form action="/login" method="post" id="login_form">
+            <% if(messages.error){%>
+            <div class="alert">
+              <strong><%=messages.error%></strong>
+            </div>
+            <% }%>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="form-group">
+              <label id="password_id" for="password"
+                ><span>Password</span
+                ><span><a href="#">Forgot password?</a></span></label
+              >
+              <span id="input_container"
+                ><input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Enter your password"
+                  required />
+                <span
+                  class="password-icon"
+                  onclick="togglePasswordVisibility()"
+                >
+                  <i class="fa fa-eye"></i> </span
+              ></span>
+            </div>
+
+            <button type="submit">Login</button>
+            <!-- <div id="sign_alternative">
+              <hr color="greyMid" />
+              <span>Or sign up with</span>
+              <hr color="greyMid" />
+            </div> -->
+          </form>
+        </div>
+      </section>
+    </div>
+    <script src="/assets/scripts.js"></script>
+  </body>
+</html>
